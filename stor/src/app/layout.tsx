@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import localFont from 'next/font/local'
 import "./globals.css";
- 
+
 // Font files can be colocated inside of `app`
 const myFont = localFont({
   src: '../../public/fonts/lazlo.woff2',
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-       <body className={`${myFont.className} antialiased font-lazlo>`}>
+      <body className={`${myFont.className} antialiased font-lazlo>`}>
         <header className="color opacity-80 sticky top-0 z-50 ">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
@@ -120,28 +120,29 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="flex flex-col space-y-6 justify-center mt-24 bg-cream-100 p-6 rounded-lg color opacity-85">
-          <nav className="flex justify-center flex-wrap gap-8 text-emerald-950 font-bold text-2xl ">
-            <a className="hover:text-gray-800 text-emerald-950 font-bold" href="#">
+          <nav className="flex justify-center flex-wrap gap-4 sm:gap-6 md:gap-4 text-emerald-950 font-bold text-base sm:text-lg md:text-xl">
+            <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
               صفحه اصلی
             </a>
-            <a className="hover:text-gray-800 text-emerald-950 font-bold" href="#">
+            <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
               درباره ما
             </a>
-            <a className="hover:text-gray-800 text-emerald-950 font-bold" href="#">
+            <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
               خدمات
             </a>
-            <a className="hover:text-gray-800 text-emerald-950 font-bold" href="#">
+            <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
               تماس با ما
             </a>
-            <a className="hover:text-gray-800 text-emerald-950 font-bold" href="#">
+            <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
               محصولات
             </a>
           </nav>
 
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-2 sm:gap-4">
+            {/* Instagram Button */}
             <div className="social-button">
-              <button className="relative w-12 h-12 rounded-full group bg-cream-100">
-                <div className="floater w-full h-full absolute top-0 left-0  rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
+              <button className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full group bg-cream-100">
+                <div className="floater w-full h-full absolute top-0 left-0 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
                 <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-black rounded-full">
                   <svg
                     fill="none"
@@ -162,9 +163,11 @@ export default function RootLayout({
                 </div>
               </button>
             </div>
+
+            {/* Twitter Button */}
             <div className="social-button">
-              <button className="relative w-12 h-12 rounded-full group bg-cream-100">
-                <div className="floater w-full h-full absolute top-0 left-0  rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
+              <button className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full group bg-cream-100">
+                <div className="floater w-full h-full absolute top-0 left-0 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
                 <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-black rounded-full">
                   <svg
                     fill="none"
@@ -181,10 +184,12 @@ export default function RootLayout({
                 </div>
               </button>
             </div>
+
+            {/* Facebook Button */}
             <div className="social-button">
-              <button className="relative w-12 h-12 rounded-full group bg-cream-100">
-                <div className="floater w-full h-full absolute top-0 left-0  rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
-                <div className="icon relative z-10 w-full h-full flex items-center justify-center  border-2 border-black  rounded-full">
+              <button className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full group bg-cream-100">
+                <div className="floater w-full h-full absolute top-0 left-0 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
+                <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-black rounded-full">
                   <svg
                     fill="none"
                     viewBox="0 0 13 22"
@@ -200,10 +205,12 @@ export default function RootLayout({
                 </div>
               </button>
             </div>
+
+            {/* YouTube Button */}
             <div className="social-button">
-              <button className="relative w-12 h-12 rounded-full group bg-cream-100">
-                <div className="floater w-full h-full absolute top-0 left-0  rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
-                <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-black  rounded-full">
+              <button className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full group bg-cream-100">
+                <div className="floater w-full h-full absolute top-0 left-0 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl" />
+                <div className="icon relative z-10 w-full h-full flex items-center justify-center border-2 border-black rounded-full">
                   <svg
                     fill="none"
                     viewBox="0 0 30 22"
@@ -225,7 +232,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <p className="text-center text-black font-bold text-lg">
+          <p className="text-center text-black font-bold text-sm sm:text-base md:text-lg mt-4">
             © 2022 Company Ltd. All rights reserved.
           </p>
         </footer>

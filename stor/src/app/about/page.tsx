@@ -6,69 +6,66 @@ function abuot() {
         {/* محتوای شما */}
 
         <section className="color">
-          <div className="w-full   m-auto flex items-center justify-cetner py-20 bg-gray-50 ">
+          <div className="w-full m-auto flex items-center justify-center py-20 bg-gray-50">
             <div className="w-full h-full flex flex-col justify-center items-center sm:px-4 px-2">
-              {/*  */}
-              <div className="lg:w-[90%] w-full mx-auto flex flex-col lg:gap-6 lg:flex-row items-center justify-center ">
+              <div className="lg:w-[90%] w-full mx-auto flex flex-col lg:gap-6 lg:flex-row items-center justify-center">
+                {/* Image Section */}
                 <div className="relative">
-                  {/* Side Img 1 */}
+                  {[
+                    { src: "/img/1.webp", alt: "Side Image", className: "lg:left-[2rem] -top-4 left-[1rem]" },
+                    { src: "/img/2.webp", alt: "Side Image 2", className: "lg:top-[12rem] sm:top-[11rem] top-[8rem] sm:-left-[3rem] -left-[3rem]" },
+                    { src: "/img/5.avif", alt: "Side Image 3", className: "lg:top-[28rem] sm:top-[20.5rem] top-[14rem] left-[5rem]" }
+                  ].map((img, index) => (
+                    <img
+                      key={index}
+                      className={`absolute z-20 lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[5rem] h-[5rem] rounded-full ${img.className}`}
+                      src={img.src}
+                      alt={img.alt}
+                    />
+                  ))}
                   <img
-                    className="absolute z-20 lg:left-[2rem] -top-4 left-[1rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
-                    src="/img/1.webp"
-                    alt="Side Image"
-                  />
-                  {/* Side Img 2 */}
-                  <img
-                    className="absolute z-20 lg:top-[12rem] sm:top-[11rem] top-[5rem] sm:-left-[3rem] -left-[2rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
-                    src="/img/2.webp"
-                    alt="Side Image 2"
-                  />
-                  {/* Side Img 3 */}
-                  <img
-                    className="absolute z-20 lg:top-[23rem] sm:top-[20.5rem] top-[10.5rem] left-[2rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
-                    src="/img/5.avif"
-                    alt="Side Image 3"
-                  />
-                  {/* Main Img */}
-                  <img
-                    className="rounded-full relative object-cover right-0 lg:w-[30rem] lg:h-[30rem] sm:w-[25rem] sm:h-[25rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-green-500"
+                    className="rounded-full relative object-cover right-0 lg:w-[30rem] lg:h-[30rem] sm:w-[25rem] sm:h-[25rem] w-[15rem] h-[15rem] outline sm:outline-offset-[.77em] outline-offset-[.37em] outline-green-500"
                     src="/img/3.webp"
                     alt="About us"
                   />
                 </div>
-                {/*  */}
-                <div className="lg:w-[60%] bg-[#f5d6b0] p-4 w-full h-full mt-9 shadow-xl shadow-[#aaa784] flex flex-col justify-center items-center sm:px-6 px-4 rounded-xl">
+
+                {/* Text Section */}
+                <div className="lg:w-[60%] w-full h-full p-4 sm:mt-28 mt-20 lg:mt-4 shadow-xl shadow-[#aaa784] flex flex-col justify-center items-center sm:px-6 px-4 rounded-xl coler-effect">
                   <h2 className="text-4xl text-center text-emerald-950 dark:text-emerald-800 font-bold px-4 py-1 md:mt-0 mt-10">
                     درباره فروشگاه
                   </h2>
                   <p className="md:text-3xl text-2xl text-center text-gray-800 dark:text-gray-600 font-bold my-5">
                     فروش انواع وسایل آشپزخانه
                   </p>
-                  <p className="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-600">
-                    روشن کیتچن با بهترین برند های خاص جهان(برند اصلی) اماده خدمت رسانی لوازم خانگی به مشتریان با بهترین کیفیت و ضمانت سلامت فیزکی کالا
-
-                    72ساعت مرجوع کالا در صورت خرابی و شکستگی
-
-                    جنس بشرط اورجینال و با فاکتور برای مشتری ارسال میگردد
-
-                    اگر سوالی دارید با شماره زیر تماس بگیرید
-
-                    _همراه:09175982074
-
-                    _واتساپ:09174318895
-
-                    _اینستاگرام:roshankitchen1
-
-                    فیلم کوتاه و عکس بعضی از اجناس رو میتونید داخل اینستاگرام مشاهده کنید”برای خرید از طریق وبسایت اقدام نمایید
-
-                    در اسرع وقت تا ساعت 22پاسخگوی شما مشتریان و هموطنان عزیز هستیم
-
-                    با تشکر
-                  </p>
-                  {/* button */}
-                  <button className="lg:mt-10 mt-6 lg:px-6 px-4 lg:py-4 py-2 bg-emerald-800 rounded-sm lg:text-xl text-lg text-white font-semibold">
-                    Read More
-                  </button>
+                  <div className="md:text-xl sm:text-lg text-base mt-2 text-justify sm:px-2 dark:text-gray-600 space-y-4">
+                    <p>
+                      روشن کیتچن با بهترین برند های خاص جهان (برند اصلی) آماده خدمت‌رسانی لوازم خانگی به مشتریان با بهترین کیفیت و ضمانت سلامت فیزیکی کالا.
+                    </p>
+                    <p>
+                      ۷۲ ساعت مرجوع کالا در صورت خرابی و شکستگی.
+                    </p>
+                    <p>
+                      جنس به شرط اورجینال و با فاکتور برای مشتری ارسال می‌گردد.
+                    </p>
+                    <p>
+                      اگر سوالی دارید با شماره زیر تماس بگیرید:
+                    </p>
+                    <ul className="list-disc list-inside">
+                      <li>همراه: ۰۹۱۷۵۹۸۲۰۷۴</li>
+                      <li>واتس‌اپ: ۰۹۱۷۴۳۱۸۸۹۵</li>
+                      <li>اینستاگرام: roshankitchen1</li>
+                    </ul>
+                    <p>
+                      فیلم کوتاه و عکس بعضی از اجناس را می‌توانید داخل اینستاگرام مشاهده کنید. برای خرید از طریق وب‌سایت اقدام نمایید.
+                    </p>
+                    <p>
+                      در اسرع وقت تا ساعت ۲۲ پاسخگوی شما مشتریان و هموطنان عزیز هستیم.
+                    </p>
+                    <p>
+                      با تشکر
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,139 +130,7 @@ function abuot() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="w-full  flex items-center  ">
-            <div className="w-full lg:w-[80%] mx-auto px-4 sm:px-10 lg:px-0 flex flex-col gap-4 pt-10 pb-20 dark:text-emerald-800">
-              {/* عنوان */}
-              <div className="flex flex-col gap-2 mb-2 md:mb-4">
-                <h2 className="text-4xl font-serif font-semibold">درباره من</h2>
-                <span className="w-16 h-[4px] bg-[#f5ca95] rounded" />
-                <span className="w-8 h-[4px] bg-[#f5ca95] rounded" />
-              </div>
-              <h4 className="capitalize text-xl font-semibold">
-                من ساموئل آبرا هستم و یک
-                <span className="text-[#f3a444]">توسعه‌دهنده وب </span>
-              </h4>
-              <p className="">
-                من یک توسعه‌دهنده فول‌استک متعهد و نوآور هستم که به ایجاد تجربیات دیجیتال
-                تأثیرگذار علاقه‌مندم. با دقت به جزئیات و تعهد به برتری، من در طراحی و
-                توسعه راه‌حل‌هایی تخصص دارم که خلاقیت را با عملکرد ترکیب می‌کنند.
-              </p>
-              <div className="w-full flex flex-col lg:flex-row gap-12 sm:gap-4 lg:gap-20 justify-between">
-                {/* ستون ۱ */}
-                <div className="w-full flex flex-col items-stretch gap-4">
-                  {/* ستون ۱ */}
-                  <div className="flex flex-col sm:flex-row gap-2 md:gap-6 items-center justify-between font-serif">
-                    {/* ۱ */}
-                    <ul className="w-full text-emerald-800 dark:text-gray-200">
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600  text-emerald-800">
-                        <span className="font-bold">تاریخ تولد :</span> ۲۱ فوریه ۱۹۹۷
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">وب‌سایت :</span>
-                        https://website.com
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">مدرک :</span> کارشناسی علوم کامپیوتر
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">موقعیت :</span>
-                        آدیس آبابا، اتیوپی
-                      </li>
-                    </ul>
-                    {/* ۲ */}
-                    <ul className="w-full text-emerald-800 dark:text-gray-200 font-serif">
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">ایمیل :</span>
-                        samuelabera87@gmail.com
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">شماره تلفن :</span>
-                        +2519134***30
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">وضعیت شغلی :</span>
-                        دورکاری
-                      </li>
-                      <li className="py-2 border-b border-gray-200 dark:border-gray-600 text-emerald-800">
-                        <span className="font-bold">فریلنسر :</span>
-                        در دسترس
-                      </li>
-                    </ul>
-                  </div>
-                  {/* ستون ۲ دکمه‌ها */}
-                  <div className="flex gap-4 justify-center sm:justify-start">
-                    <button className="px-4 sm:px-6 py-2 bg-[#faba6d] rounded-full text-white font-bold">
-                      دانلود رزومه
-                    </button>
-                    <button className="px-4 sm:px-6 py-2 bg-[#faba6d] rounded-full text-white font-bold">
-                      استخدام من
-                    </button>
-                  </div>
-                </div>
-                {/* ستون ۲ */}
-                <div className="w-full flex flex-col gap-2">
-                  {/* نوار پیشرفت ۱ */}
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full flex justify-between font-semibold">
-                      <span>وردپرس</span>
-                      <span>۹۲ %</span>
-                    </div>
-                    {/* نوار پیشرفت */}
-                    <div className="w-full bg-gray-300 rounded-full">
-                      <div className="w-[92%] h-2 bg-[#faba6d] rounded-full" />
-                    </div>
-                  </div>
-                  {/* نوار پیشرفت ۲ */}
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full flex justify-between font-semibold">
-                      <span>HTML/CSS/Javascript</span>
-                      <span>۹۰ %</span>
-                    </div>
-                    {/* نوار پیشرفت */}
-                    <div className="w-full bg-gray-300 rounded-full">
-                      <div className="w-[90%] h-2 bg-[#faba6d] rounded-full" />
-                    </div>
-                  </div>
-                  {/* نوار پیشرفت ۳ */}
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full flex justify-between font-semibold">
-                      <span>PHP/Laravel</span>
-                      <span>۸۰ %</span>
-                    </div>
-                    {/* نوار پیشرفت */}
-                    <div className="w-full bg-gray-300 rounded-full">
-                      <div className="w-[80%] h-2 bg-[#faba6d] rounded-full" />
-                    </div>
-                  </div>
-                  {/* نوار پیشرفت ۴ */}
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full flex justify-between font-semibold">
-                      <span>Vue/Nuxt</span>
-                      <span>۸۵ %</span>
-                    </div>
-                    {/* نوار پیشرفت */}
-                    <div className="w-full bg-gray-300 rounded-full">
-                      <div className="w-[85%] h-2 bg-[#faba6d] rounded-full" />
-                    </div>
-                  </div>
-                  {/* نوار پیشرفت ۵ */}
-                  <div className="flex flex-col gap-2">
-                    <div className="w-full flex justify-between font-semibold">
-                      <span>Nestjs</span>
-                      <span>۷۰ %</span>
-                    </div>
-                    {/* نوار پیشرفت */}
-                    <div className="w-full bg-gray-300 rounded-full">
-                      <div className="w-[70%] h-2 bg-[#faba6d] rounded-full" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-        </section>
       </main>
     </>
 
