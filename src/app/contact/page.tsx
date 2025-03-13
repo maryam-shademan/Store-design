@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 function contact() {
   return (
     <>

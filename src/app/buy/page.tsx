@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 function store() {
   return (
     <section className="bg-white py-8 antialiased  md:py-16">
