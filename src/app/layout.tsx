@@ -118,7 +118,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        {children}
+          {children}
         <footer className="flex flex-col space-y-6 justify-center mt-24 bg-cream-100 p-6 rounded-lg color opacity-85">
           <nav className="flex justify-center flex-wrap gap-4 sm:gap-6 md:gap-4 text-emerald-950 font-bold text-base sm:text-lg md:text-xl">
             <a className="hover:text-gray-800 text-emerald-950 font-bold px-2 py-1 sm:px-3 sm:py-2" href="#">
