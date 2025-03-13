@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 
 
 export default function Home() {
@@ -221,7 +220,7 @@ export default function Home() {
                       <span className="text-blue-600 text-xl font-semibold">${item.price.toFixed(2)}</span>
                       <span className="text-gray-400 text-sm line-through">${item.discount.toFixed(2)}</span>
                     </div>
-                    <button className="  rounded-full p-1 bg-[#fcbd70] hover:bg-[#ebb981]  flex items-center justify-center shadow text-white">
+                    <a href="/product" className="  rounded-full p-1 bg-[#fcbd70] hover:bg-[#ebb981]  flex items-center justify-center shadow text-white">
                       سبد خرید
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +240,7 @@ export default function Home() {
                         <path d="M17 17h-11v-14h-2" />
                         <path d="M6 5l14 1l-1 7h-13" />
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -334,8 +333,10 @@ export default function Home() {
                   <p className="text-lg font-bold text-[#fcbd70] ">
                     {item.price} <span className="text-gray-400 line-through">{item.originalPrice}</span>
                   </p>
-                  <button className="bg-[#fcbd70] text-[#fcbd70]  font-bold mt-2">افزودن به سبد</button>
-                </div>
+                
+                   <a href="/product" className="bg-[#fcbd70] text-[#fcbd70]  font-bold mt-2 ">افزودن به سبد</a>
+                
+                  </div>
               ))}
             </div>
 
@@ -370,7 +371,7 @@ export default function Home() {
                     {item.price} <span className="text-gray-400 line-through">{item.originalPrice}</span>
                   </p>
 
-                  <button className="text-[#f0a74f] font-bold mt-2 flex items-center hover:text-amber-800">
+                  <a href="/product" className="text-[#f0a74f] font-bold mt-2 flex items-center hover:text-amber-800">
                     افزودن به سبد
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +387,7 @@ export default function Home() {
                       <line x1="3" y1="6" x2="21" y2="6"></line>
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -501,7 +502,7 @@ export default function Home() {
                         <span className="text-blue-600 text-xl font-semibold">${item.price.toFixed(2)}</span>
                         <span className="text-gray-400 text-sm line-through">${item.discount.toFixed(2)}</span>
                       </div>
-                      <button className="  rounded-full p-1 bg-[#fcbd70] hover:bg-[#ebb981]  flex items-center justify-center shadow text-white">
+                      <a href="/product" className="  rounded-full p-1 bg-[#fcbd70] hover:bg-[#ebb981]  flex items-center justify-center shadow text-white">
                         سبد خرید
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +522,7 @@ export default function Home() {
                           <path d="M17 17h-11v-14h-2" />
                           <path d="M6 5l14 1l-1 7h-13" />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import localFont from 'next/font/local'
 import "./globals.css";
+import Link from "next/link";
 
 // Font files can be colocated inside of `app`
 const myFont = localFont({
@@ -41,27 +42,27 @@ export default function RootLayout({
                 <nav aria-label="Global">
                   <ul className="flex items-center gap-8 text-emerald-950 text-2xl">
                     <li>
-                      <a className="text-emerald-950 font-bold transition hover:text-gray-500/75 hover:translate-y-1" href="#">
+                      <Link className="text-emerald-950 font-bold transition hover:text-gray-500/75 hover:translate-y-1" href="/about">
                         درباره ما
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="#">
+                      <Link className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="/contact">
                         تماس باما
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="#">
+                      <Link className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="/">
                         صفحه اصلی
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
-                      <a className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="#">
+                      <Link className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="/store">
                         فروشگاه
-                      </a>
+                      </Link>
                     </li>
 
                     <li>
@@ -71,9 +72,9 @@ export default function RootLayout({
                     </li>
 
                     <li>
-                      <a className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="#">
+                      <Link className="text-emerald-950 font-bold  transition hover:text-gray-500/75 hover:translate-y-1" href="/blog">
                         وبلاگ
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

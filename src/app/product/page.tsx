@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 
 
 function store() {
@@ -147,12 +146,12 @@ function store() {
               </fieldset>
             </div>
             <div className="mt-6 flex space-x-4">
-              <button
+              <a href="/buy"
                 type="submit"
                 className="flex-1 bg-[#f8c587] text-white py-2 px-4 rounded-md hover:bg-[#f8c585] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#dd9f52]"
               >
                 افزودن به سبد خرید
-              </button>
+              </a>
               <button
                 type="button"
                 className="flex-1 bg-gray-100 text-emerald-950 py-2 px-4 rounded-md hover:bg-[#f8c585] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#dd9f52]"
